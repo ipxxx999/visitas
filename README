@@ -1,0 +1,26 @@
+# visitas
+Registro de visitantes en tu sitio web en PHP 
+Visitor registration on your website in PHP
+
+
+<?php
+/* Database credentials. Assuming you are running MySQL
+/* Credenciales de la base de datos. Suponiendo que está ejecutando MySQL
+server with default setting (user 'root' with no password) */
+/*servidor con configuración predeterminada (usuario 'root' sin contraseña) */
+
+define('DB_SERVER', 'localhost');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', 'mistica123');
+define('DB_NAME', 'login_user2');
+ 
+/* Attempt to connect to MySQL database */
+/* Intento de conectarse a la base de datos MySQL */
+$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+ 
+// Check connection
+// Verifica la conexión
+if($link === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+?>
